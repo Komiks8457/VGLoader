@@ -6,10 +6,21 @@ What does VGLoader do?
 * no need to manualy inject vanguard dll's to the modules.
 * ability to also load your custom dll for each modules.
 * ability to hide vanguard console window.
-* 
+
 Loading your custom dll:
 * Make a Plugin folder and place your dll, your dll name should be the same as your target module.
   E.g. MachineManager.dll it will be loaded on MachineManager.exe.
+
+Hide Console window of Vanguard
+* Simply add HideConsole key with value TRUE or FALSE on each .ini of vanguard.
+  E.g. GatewayServer.ini
+  ```ini
+  [GatewayServer]
+  Key=
+  PacketDebugging=0
+  HideConsole=true
+  ConnectionString=
+  ```
 
 ** REMINDER **
 Vanguard is attached to this modules (AgentServer, DownloadServer, GatewayServer, SR_GameServer, SR_ShardManager).
